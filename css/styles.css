@@ -1,0 +1,40 @@
+.jumbotron {
+    background-color: #F8F8F8;
+}
+
+.holder {
+    margin: 20px 0; 
+}
+
+#output{
+	margin: 20px 0;
+}
+
+.btn-dark {
+    border-color: #7B7B7B;
+    color: #7B7B7B;
+}
+
+.btn-dark:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
+    
+}
+
+.btn-dark:active {
+    background-color: white;
+    border-color: black;
+    color: black;
+    
+}
+
+.btn-dark:focus {
+    background-color: white;
+    border-color: black !important;
+    color: black;
+    
+}
+
+
+}

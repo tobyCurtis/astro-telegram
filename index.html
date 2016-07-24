@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 
 <head>
-  <title>astroQuery</title>
-  <script src="/javascript/jquery-2.2.3.js"></script>
+    <title>astroQuery</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <form action="javascript:getWeight()">
-    Enter your weight: 
-    <input type="number" id="userWeight">
-    <select id="planetList"></select>
-    <button type="submit" >Calc</button>
-  </form>
-  <p id="output"></p>
-  
-  
-  <script src="/javascript/index.js"></script>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>astroQuery</h1>
+            <p>This is a tool to calculate your weight on another planet written with jQuery</p>
+        </div>
+    </div>
+    <div class="container">
+        <form action="javascript:getWeight()" role="form">
+        <div class="holder">
+            <label for="userWeight">Enter your weight</label>
+            <input type="number" id="userWeight" class="form-control">
+            </div>
+            <div class="holder">
+            <label for="planetList">Select the planet</label>
+            <select id="planetList" class="form-control"></select>
+            </div>
+            <button type="submit" class="btn btn-default btn-lg btn-block btn-dark">Calculate</button>
+        </form>
+        <p id="output" class="text-center"></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="/javascript/index.js"></script>
 </body>
